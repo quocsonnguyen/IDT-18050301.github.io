@@ -1,0 +1,141 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+}
+
+/* .header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/images/banner.jpg");
+    background-size: cover;
+    opacity: 0.5;
+} */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/images/banner.jpg");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.content {
+    width: 80%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.chucmung {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    z-index: 1;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul{
+    background: #000;
+    color: #fff;
+}
+
+nav.black .chucmung{
+    color: #fff;
+}
+
+nav.black ul li a {
+    color: #fff;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.baitho-content p {
+    text-align: center;
+}
+
+.baitho-content {
+    margin-top: 175px;
+    /* z-index: -1; */
+}
+
+.baitho-img {
+    z-index: -1;
+}
+
+.camon-content p {
+    margin-top: 150px;
+    text-align: justify;
+}
+
+
+@media(max-width: 786px) {
+
+    .chucmung {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+}
